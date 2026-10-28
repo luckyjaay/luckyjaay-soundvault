@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, .font-heading {
+    font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1118;
+}
+::-webkit-scrollbar-thumb {
+  background: #272d3d;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* Shaking button animation when 30s preview ends */
+@keyframes buttonShake {
+  0%, 100% {
+    transform: translateX(0) scale(1);
+  }
+  15% {
+    transform: translateX(-5px) rotate(-1.5deg) scale(1.02);
+  }
+  30% {
+    transform: translateX(5px) rotate(1.5deg) scale(1.02);
+  }
+  45% {
+    transform: translateX(-4px) rotate(-1deg);
+  }
+  60% {
+    transform: translateX(4px) rotate(1deg);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+}
+
+.animate-shake-pulse {
+  animation: buttonShake 1.2s infinite ease-in-out;
+}
+

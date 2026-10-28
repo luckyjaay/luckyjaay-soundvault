@@ -1,0 +1,6 @@
+{
+  "name": "SoundVault - Direct Music & Manual Payment Hub",
+  "description": "LUCKY JAAY MUSIC CATALOG - Exclusive music releases, 30-sec previews, and direct manual downloads with WhatsApp code verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
